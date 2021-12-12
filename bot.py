@@ -2,9 +2,7 @@ import os
 
 from discord.ext import commands
 from discord import Intents
-from dotenv import load_dotenv
 
-load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = Intents.default()
