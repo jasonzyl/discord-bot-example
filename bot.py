@@ -9,6 +9,8 @@ intents = Intents.default()
 intents.members = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+print('Trying to start bot with token: %s' % TOKEN)
+
 
 @bot.command(pass_context=True, name='hello', help='Hello World')
 async def hello(ctx):
